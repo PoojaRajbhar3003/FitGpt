@@ -1,0 +1,6 @@
+@FitGpt_HostAddress = http://localhost:5029
+
+GET {{FitGpt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
