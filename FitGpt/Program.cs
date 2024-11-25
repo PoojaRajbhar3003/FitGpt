@@ -99,7 +99,7 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 
 builder.Services.AddControllers(options =>
 {
-    //options.Filters.Add<GlobalExceptionFilter>();
+    options.Filters.Add<GlobalExceptionFilter>();
 })
 .ConfigureApiBehaviorOptions(options =>
 {

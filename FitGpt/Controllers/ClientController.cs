@@ -26,7 +26,7 @@ namespace FitGpt.Controllers
         {
             try
             {
-                var response = _clientService.CreateclientDetailsAsync(user);
+                var response = await _clientService.CreateclientDetailsAsync(user);
                 return StatusCode(200, response);
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace FitGpt.Controllers
         {
             try
             {
-                var response = _clientService.DeleteclientDetailsAsync(userID);
+                var response = await _clientService.DeleteclientDetailsAsync(userID);
                 return StatusCode(200, response);
             }
             catch (Exception ex)
@@ -56,7 +56,7 @@ namespace FitGpt.Controllers
         {
             try
             {
-                var response = _clientService.GetClientAsync(userID);
+                var response = await _clientService.GetClientAsync(userID);
                 return StatusCode(200, response);
             }
             catch (Exception ex)
